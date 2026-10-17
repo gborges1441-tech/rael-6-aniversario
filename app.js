@@ -66,6 +66,9 @@ document.querySelector("#decline-button").addEventListener("click", () => {
   openWhatsApp(messages.decline);
 });
 
+document.querySelector("#quick-pending").addEventListener("click", () => openWhatsApp(messages.pending));
+document.querySelector("#quick-decline").addEventListener("click", () => openWhatsApp(messages.decline));
+
 [familyInput, adultsInput, childrenInput].forEach((input) => {
   input.addEventListener("input", () => {
     if (errorMessage.textContent) errorMessage.textContent = "";

@@ -15,15 +15,8 @@
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <div class="page-shell">
       <header class="topbar">
-        <a class="wordmark" href="#inicio" aria-label="Ir para o início">
-          <span class="wordmark-mark">R<span>6</span></span>
-          <span class="wordmark-text">RAEL<br /><small>VAI FAZER ANOS</small></span>
-        </a>
-        <nav class="topnav" aria-label="Navegação principal">
-          <a href="#momentos">Momentos</a>
-          <a href="#experiencia">Experiência</a>
-          <a class="nav-cta" href="#confirmacao">Confirmar</a>
-        </nav>
+        <span class="topbar-kicker">convite de aniversário</span>
+        <a class="nav-cta" href="#confirmacao">Responder <span aria-hidden="true">↗</span></a>
       </header>
 
       <main id="conteudo">
@@ -39,6 +32,11 @@
             <h1 id="hero-title">RAEL <span>VAI FAZER</span> <strong>6 ANOS!</strong></h1>
             <p class="hero-lede">Prepare-se para um dia de muita água, alegria e diversão!</p>
             <a class="button button-yellow" href="#confirmacao">QUERO PARTICIPAR! <span aria-hidden="true">↘</span></a>
+            <div class="quick-actions" aria-label="Respostas rápidas">
+              <a class="quick-action quick-action-yes" href="#confirmacao">vou participar</a>
+              <button class="quick-action" id="quick-pending" type="button">ainda vou confirmar</button>
+              <button class="quick-action" id="quick-decline" type="button">não poderei ir</button>
+            </div>
           </div>
           <div class="hero-date-card" aria-label="Data do aniversário">
             <span class="hero-date-day">31</span>
@@ -67,47 +65,21 @@
               <div class="photo-note">foto real<br />do aniversariante</div>
             </div>
           </div>
-          <div class="gallery-strip" aria-label="Espaços para novas fotos do Rael">
-            <div class="gallery-placeholder placeholder-one"><span>mais momentos</span><small>em breve</small></div>
-            <div class="gallery-placeholder placeholder-two"><span>mais sorrisos</span><small>em breve</small></div>
-            <p>Envie novas fotos quando quiser.<br /><b>O convite já está pronto para receber mais memórias.</b></p>
-          </div>
         </section>
 
-        <section class="experience" id="experiencia" aria-labelledby="experiencia-title">
-          <div class="experience-shape shape-top"></div>
-          <div class="section-pad experience-inner">
-            <div class="section-kicker light"><span>02</span><i></i><span>o dia</span></div>
-            <div class="experience-heading">
-              <p class="eyebrow light">Água, sol e muita história para contar</p>
-              <h2 id="experiencia-title">NOSSO ENCONTRO SERÁ <span>CHEIO DE DIVERSÃO!</span></h2>
-            </div>
-            <div class="experience-grid">
-              <article class="experience-card card-photo">
-                <div class="card-image-crop"><img src="/manus-storage/ebd935fd-0993-4dac-acab-c1b84837a40a_8a9dd9a4.png" alt="Rael em meio à água e aos escorregadores" loading="lazy" /></div>
-                <div class="card-caption"><span>01</span><strong>água para<br />se jogar</strong></div>
-              </article>
-              <article class="experience-card card-water">
-                <div class="water-orbit orbit-one"></div><div class="water-orbit orbit-two"></div><div class="water-spark spark-one"></div><div class="water-spark spark-two"></div>
-                <div class="card-caption"><span>02</span><strong>aventura para<br />viver junto</strong></div>
-              </article>
-              <article class="experience-card card-sun">
-                <div class="sun-disc"></div><div class="slide-ribbon ribbon-one"></div><div class="slide-ribbon ribbon-two"></div>
-                <div class="card-caption"><span>03</span><strong>sol para<br />iluminar tudo</strong></div>
-              </article>
-            </div>
-            <p class="experience-note">A imagem principal é uma foto real enviada pela família. Os grafismos desta seção são uma interpretação visual da experiência — não representam fotos específicas do Termas da Mata.</p>
-          </div>
-          <div class="experience-shape shape-bottom"></div>
+        <section class="vibe-band section-pad" aria-labelledby="vibe-title">
+          <div class="vibe-copy"><p class="eyebrow light">Água, sol e muita história para contar</p><h2 id="vibe-title">NOSSO ENCONTRO SERÁ <span>CHEIO DE DIVERSÃO!</span></h2></div>
+          <div class="vibe-chips"><span>água para se jogar</span><span>aventura para viver junto</span><span>sol para iluminar tudo</span></div>
+          <p class="vibe-note">A foto é real e foi enviada pela família. Os elementos gráficos são uma interpretação visual da experiência.</p>
         </section>
 
         <section class="details section-pad" aria-labelledby="details-title">
-          <div class="section-kicker"><span>03</span><i></i><span>anote aí</span></div>
+          <div class="section-kicker"><span>02</span><i></i><span>anote aí</span></div>
           <div class="details-layout">
             <div class="details-intro">
               <p class="eyebrow">Tudo o que você precisa saber</p>
               <h2 id="details-title">Um dia inteiro para aproveitar sem pressa.</h2>
-              <p class="body-copy">Separe a roupa de banho, o sorriso e a vontade de brincar. O mais importante é chegar para viver esse momento com o Rael.</p>
+              <p class="body-copy">Separe a roupa de banho, o sorriso e a vontade de brincar.</p>
             </div>
             <div class="details-list">
               <article class="detail-item"><span class="detail-index">01</span><div><small>quando</small><h3>31 de outubro de 2026</h3><p>sábado</p></div></article>
@@ -119,7 +91,7 @@
 
         <section class="confirmation section-pad" id="confirmacao" aria-labelledby="confirmacao-title">
           <div class="confirmation-orbit"></div>
-          <div class="section-kicker light"><span>04</span><i></i><span>responda</span></div>
+          <div class="section-kicker light"><span>03</span><i></i><span>responda</span></div>
           <div class="confirmation-layout">
             <div class="confirmation-copy">
               <p class="eyebrow light">Sua resposta ajuda a preparar tudo</p>

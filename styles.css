@@ -124,3 +124,46 @@ img { display: block; max-width: 100%; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
 @media (max-width: 820px) { .topnav a:not(.nav-cta) { display: none; }.hero { min-height: 760px; }.hero-image { object-position: 52% 45%; }.hero-scrim { background: linear-gradient(90deg, rgba(4,40,69,.78), rgba(4,40,69,.16)), linear-gradient(0deg, rgba(4,40,69,.88), transparent 64%); }.hero-date-card { right: 1.2rem; bottom: 3rem; width: 6.8rem; height: 6.8rem; }.hero-date-day { font-size: 2.4rem; }.hero-content { padding-bottom: 7rem; }.intro-layout, .details-layout, .confirmation-layout { grid-template-columns: 1fr; }.intro-copy { max-width: 36rem; }.photo-composition { width: min(100%, 33rem); min-height: 32rem; margin: 0 auto; }.experience-heading { display: block; }.experience-heading .eyebrow { margin-top: 2rem; }.experience-grid { grid-template-columns: 1fr 1fr; }.card-photo { grid-column: 1 / -1; min-height: 25rem; }.experience-card { min-height: 18rem; }.details-list { margin-top: 1rem; }.confirmation-copy { max-width: 38rem; }.confirmation-form { width: min(100%, 38rem); } }
 @media (max-width: 520px) { .topbar { padding-top: 1.1rem; }.wordmark-text { display: none; }.hero { min-height: 720px; }.hero-content { padding-top: 9rem; }.hero h1 { font-size: clamp(3.1rem, 16vw, 5.4rem); }.hero-date-card { bottom: 2.2rem; width: 5.9rem; height: 5.9rem; }.hero-date-day { font-size: 2rem; }.hero-date-month { font-size: .55rem; }.hero-date-year { font-size: .5rem; }.hero-scroll { display: none; }.intro-layout { gap: 2rem; }.intro h2, .details h2 { font-size: clamp(2.65rem, 13vw, 4rem); }.photo-composition { min-height: 26rem; }.photo-card { width: 78%; }.photo-stamp { width: 5.7rem; height: 5.7rem; }.photo-stamp strong { font-size: 2.3rem; }.photo-note { right: 0; top: 5%; font-size: .55rem; }.gallery-strip { grid-template-columns: 1fr 1fr; }.gallery-strip p { grid-column: 1 / -1; margin: .7rem 0 0; }.experience h2 { font-size: clamp(2.7rem, 13vw, 4.6rem); }.experience-grid { grid-template-columns: 1fr; }.card-photo { grid-column: auto; }.experience-card { min-height: 17rem; }.form-row { gap: .65rem; }.form-field input { min-height: 3rem; }.closing h2 { font-size: clamp(2.7rem, 13vw, 4.2rem); }.closing-facts { gap: .65rem; font-size: .58rem; }.closing-facts i { display: none; }.footer { gap: 1rem; font-size: .48rem; } }
+
+/* Refinamento v2: narrativa mais curta e decisão mais rápida */
+.topbar { padding: 1.35rem clamp(1.25rem, 5vw, 7rem); }
+.topbar-kicker { color: rgba(255,255,255,.72); font-size: .58rem; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }
+.nav-cta { display: inline-flex; align-items: center; gap: .5rem; padding: .7rem 1rem; font-size: .62rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.nav-cta span { font-size: 1rem; }
+.hero { min-height: min(760px, 100svh); }
+.hero-content { padding-top: 8rem; padding-bottom: clamp(4rem, 8vw, 6rem); }
+.quick-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .55rem; margin-top: 1.15rem; }
+.quick-action { min-height: 2.1rem; padding: .55rem .8rem; border: 1px solid rgba(255,255,255,.4); border-radius: 999px; color: rgba(255,255,255,.82); background: rgba(4,40,69,.26); font-size: .58rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; transition: transform .2s ease, background .2s ease, color .2s ease; }
+.quick-action:hover { color: var(--navy); background: var(--yellow); transform: translateY(-2px); }
+.quick-action-yes { color: var(--navy); border-color: var(--yellow); background: var(--yellow); }
+.section-kicker { margin-bottom: 2.3rem; }
+.intro { padding-top: clamp(4.5rem, 8vw, 6.5rem); padding-bottom: clamp(4rem, 7vw, 6rem); }
+.photo-composition { min-height: 28rem; }
+.vibe-band { position: relative; display: grid; grid-template-columns: 1.2fr .8fr; gap: 2rem; align-items: center; overflow: hidden; padding-top: clamp(3.2rem, 6vw, 5rem); padding-bottom: clamp(3.2rem, 6vw, 5rem); color: white; background: var(--navy); }
+.vibe-band::before { content: ""; position: absolute; right: -7rem; top: -8rem; width: 24rem; height: 24rem; border: 1px solid rgba(125,233,225,.2); border-radius: 50%; box-shadow: 0 0 0 1.5rem rgba(125,233,225,.04), 0 0 0 3rem rgba(125,233,225,.03); }
+.vibe-copy, .vibe-chips, .vibe-note { position: relative; z-index: 1; }
+.vibe-copy h2 { max-width: 47rem; margin: 0; font-family: var(--display); font-size: clamp(2.4rem, 4.7vw, 5.2rem); font-weight: 800; letter-spacing: -.08em; line-height: .84; }
+.vibe-copy h2 span { color: var(--aqua-light); }
+.vibe-chips { display: flex; flex-direction: column; gap: .65rem; align-items: flex-start; }
+.vibe-chips span { padding: .55rem .8rem; border: 1px solid rgba(255,255,255,.2); border-radius: 999px; color: var(--aqua-light); font-size: .62rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.vibe-note { grid-column: 1 / -1; max-width: 42rem; margin: 0; color: rgba(255,255,255,.52); font-size: .63rem; line-height: 1.5; }
+.details { padding-top: clamp(4rem, 7vw, 6rem); padding-bottom: clamp(4rem, 7vw, 6rem); }
+.detail-item { padding-top: 1.05rem; padding-bottom: 1.05rem; }
+.confirmation .section-kicker { padding-top: clamp(4rem, 7vw, 6rem); }
+.confirmation-layout { padding-bottom: clamp(4.5rem, 8vw, 6.5rem); }
+.confirmation-quote { margin-top: 2.5rem; }
+.closing { padding-top: clamp(4rem, 7vw, 6rem); padding-bottom: clamp(3.5rem, 6vw, 5rem); }
+@media (max-width: 820px) {
+  .vibe-band { grid-template-columns: 1fr; }
+  .vibe-chips { flex-direction: row; flex-wrap: wrap; }
+  .vibe-note { grid-column: auto; }
+}
+@media (max-width: 520px) {
+  .topbar-kicker { font-size: .5rem; letter-spacing: .14em; }
+  .hero { min-height: 690px; }
+  .hero-content { padding-top: 8rem; padding-bottom: 5rem; }
+  .quick-actions { gap: .4rem; }
+  .quick-action { font-size: .5rem; padding-left: .62rem; padding-right: .62rem; }
+  .photo-composition { min-height: 25rem; }
+  .vibe-chips span { font-size: .52rem; }
+}
