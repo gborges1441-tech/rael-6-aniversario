@@ -16,14 +16,14 @@
 - [x] Mostrar visualmente a experiência de piscinas, toboáguas e água cristalina sem afirmar que imagens genéricas são fotografias do Termas da Mata.
 - [x] Exibir o título “NOSSO ENCONTRO SERÁ CHEIO DE DIVERSÃO!”.
 - [x] Exibir claramente “31 de outubro de 2026, sábado”, “Das 10h às 17h” e “Termas da Mata, Cotia, SP”.
-- [x] Não incluir link de localização sem destino exato verificado.
+- [x] Exibir o endereço oficial “Estrada Morro Grande, 3000, Jardim Ísis, Cotia – SP, CEP 06719-500”, com acesso pelo km 36 da Rodovia Raposo Tavares, e oferecer botão para abrir a rota exata no Google Maps.
 
 ## 4. Confirmação via WhatsApp
 - [x] Exibir o título “VOCÊ VEM COMEMORAR COMIGO?” e o texto “Ajude minha família a organizar tudo confirmando sua presença pelo WhatsApp.”.
 - [x] Criar formulário compacto com nome da família obrigatório, quantidade de adultos inteira não negativa e quantidade de crianças inteira não negativa.
 - [x] Validar os campos e exigir pelo menos um participante para confirmação positiva.
 - [x] Disponibilizar “VOU PARTICIPAR!”, “AINDA VOU CONFIRMAR” e “NÃO PODEREI IR”.
-- [x] Gerar link oficial `https://wa.me/5511973883544` com mensagem codificada para URL e dados preenchidos no botão de confirmação positiva.
+- [x] Gerar link direto `https://api.whatsapp.com/send?phone=5511973883544` com mensagem codificada para URL e dados preenchidos no botão de confirmação positiva, abrindo a conversa com o WhatsApp do responsável.
 - [x] Não alegar confirmação automática: o convidado precisa enviar a mensagem no WhatsApp.
 
 ## 5. Encerramento e entrega

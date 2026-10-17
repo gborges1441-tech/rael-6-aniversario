@@ -22,8 +22,8 @@ const childrenInput = document.querySelector("#children");
 const errorMessage = document.querySelector("#form-error");
 
 function openWhatsApp(message) {
-  const url = `https://wa.me/${EVENT.phone}?text=${encodeURIComponent(message)}`;
-  window.location.href = url;
+  const url = `https://api.whatsapp.com/send?phone=${EVENT.phone}&text=${encodeURIComponent(message)}`;
+  window.location.assign(url);
 }
 
 function getNonNegativeInteger(input) {
@@ -50,6 +50,7 @@ form.addEventListener("submit", (event) => {
   if (result.error) {
     errorMessage.textContent = result.error;
     (result.error.includes("família") ? familyInput : adultsInput).focus();
+    errorMessage.scrollIntoView({ behavior: "smooth", block: "center" });
     return;
   }
   errorMessage.textContent = "";
