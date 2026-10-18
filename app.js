@@ -21,6 +21,32 @@ const adultsInput = document.querySelector("#adults");
 const childrenInput = document.querySelector("#children");
 const errorMessage = document.querySelector("#form-error");
 
+document.documentElement.classList.add("js");
+
+const progressBar = document.querySelector("#scroll-progress");
+const updateProgress = () => {
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+  progressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+};
+window.addEventListener("scroll", updateProgress, { passive: true });
+updateProgress();
+
+const revealItems = document.querySelectorAll(".reveal");
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (reduceMotion || !("IntersectionObserver" in window)) {
+  revealItems.forEach((item) => item.classList.add("is-visible"));
+} else {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.12 });
+  revealItems.forEach((item) => revealObserver.observe(item));
+}
+
 function openWhatsApp(message) {
   const url = `https://api.whatsapp.com/send?phone=${EVENT.phone}&text=${encodeURIComponent(message)}`;
   window.location.assign(url);
