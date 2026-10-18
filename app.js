@@ -20,6 +20,10 @@ const familyInput = document.querySelector("#family-name");
 const adultsInput = document.querySelector("#adults");
 const childrenInput = document.querySelector("#children");
 const errorMessage = document.querySelector("#form-error");
+const birthdaySong = document.querySelector("#birthday-song");
+const musicToggle = document.querySelector("#music-toggle");
+const musicStatus = document.querySelector("#music-status");
+const musicState = document.querySelector(".music-state");
 
 document.documentElement.classList.add("js");
 
@@ -31,6 +35,39 @@ const updateProgress = () => {
 };
 window.addEventListener("scroll", updateProgress, { passive: true });
 updateProgress();
+
+function updateMusicUi() {
+  const playing = birthdaySong && !birthdaySong.paused;
+  if (!musicToggle || !birthdaySong) return;
+  musicToggle.classList.toggle("is-playing", playing);
+  musicToggle.setAttribute("aria-pressed", String(playing));
+  musicToggle.setAttribute("aria-label", playing ? "Pausar a trilha sonora" : "Tocar a trilha sonora");
+  musicStatus.textContent = playing ? "tocando agora" : "tocar trilha";
+  musicState.textContent = playing ? "Ⅱ" : "▶";
+}
+
+async function playBirthdaySong() {
+  if (!birthdaySong) return false;
+  try {
+    await birthdaySong.play();
+    updateMusicUi();
+    return true;
+  } catch {
+    updateMusicUi();
+    return false;
+  }
+}
+
+if (birthdaySong && musicToggle) {
+  birthdaySong.addEventListener("play", updateMusicUi);
+  birthdaySong.addEventListener("pause", updateMusicUi);
+  musicToggle.addEventListener("click", async () => {
+    if (birthdaySong.paused) await playBirthdaySong();
+    else birthdaySong.pause();
+  });
+  window.addEventListener("pointerdown", () => { if (birthdaySong.paused) playBirthdaySong(); }, { once: true, passive: true });
+  updateMusicUi();
+}
 
 const revealItems = document.querySelectorAll(".reveal");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

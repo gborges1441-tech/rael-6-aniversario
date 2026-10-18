@@ -53,12 +53,21 @@
               <button class="quick-action" id="quick-pending" type="button">ainda vou confirmar</button>
               <button class="quick-action" id="quick-decline" type="button">não poderei ir</button>
             </div>
+            <div class="music-control">
+              <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Tocar a trilha sonora">
+                <span class="music-disc" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="music-copy"><strong>Parabéns, Rael!</strong><small id="music-status">tocar trilha</small></span>
+                <span class="music-state" aria-hidden="true">▶</span>
+              </button>
+              <audio id="birthday-song" src="./assets/rael-trilha.mp3" preload="metadata" loop autoplay></audio>
+            </div>
           </div>
           <div class="hero-date-card" aria-label="Data do aniversário">
             <span class="hero-date-day">31</span>
             <span class="hero-date-month">OUT</span>
             <span class="hero-date-year">2026</span>
           </div>
+          <div class="hero-rail" aria-hidden="true"><span>31.10</span><i></i><span>TERMAS DA MATA</span></div>
           <div class="hero-scroll" aria-hidden="true"><span></span>deslize para descobrir</div>
         </section>
 

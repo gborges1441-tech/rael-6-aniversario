@@ -31,5 +31,6 @@
 - [ ] Enviar novas fotos do Rael quando disponíveis para substituir os placeholders da galeria.
 - [x] Preparar preview funcional, manifesto de rota e configuração para publicação estática gratuita.
 - [x] Preparar metadados Open Graph e Twitter Card com a foto real do Rael, título, descrição, URL canônica e imagem absoluta para prévia em WhatsApp.
+- [x] Incorporar a trilha enviada “Parabéns, Rael!” como áudio local em loop, com controle acessível de tocar/pausar e tentativa de início após a primeira interação, respeitando o bloqueio de autoplay dos navegadores.
 - [ ] Publicar a cópia pública no GitHub Pages e confirmar o link permanente após o workflow concluir.
 - [ ] Confirmar publicação pública do projeto gerenciado após checkpoint e publicação efetivos.
