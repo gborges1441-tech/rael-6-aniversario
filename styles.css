@@ -254,3 +254,17 @@ html.js .reveal.is-visible { opacity: 1; transform: translateY(0); }
 @keyframes vinyl-spin { to { transform: rotate(360deg); } }
 @media (max-width: 520px) { .music-control { width: min(100%, 15rem); margin-top: .9rem; } .music-copy strong { font-size: .7rem; } }
 @media (prefers-reduced-motion: reduce) { .music-toggle.is-playing .music-disc { animation: none; } }
+
+/* Valores do grupo */
+.price-card { display: grid; grid-template-columns: .95fr 1.05fr; gap: clamp(1.5rem, 5vw, 5rem); align-items: center; margin-top: clamp(2.5rem, 5vw, 4rem); padding: clamp(1.35rem, 3vw, 2.25rem); border-radius: var(--radius-lg); color: white; background: linear-gradient(135deg, #073b66 0%, #075474 100%); box-shadow: 0 22px 55px rgba(4,40,69,.15); }
+.price-heading h3 { max-width: 22rem; margin: 0; font-family: var(--display); font-size: clamp(1.8rem, 3.5vw, 3.2rem); letter-spacing: -.07em; line-height: .92; }
+.price-heading > p:not(.eyebrow) { max-width: 28rem; margin: 1rem 0 0; color: rgba(255,255,255,.75); font-size: .78rem; line-height: 1.65; }
+.price-heading strong { color: var(--yellow); }
+.price-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: .7rem; }
+.price-options > div { display: flex; flex-direction: column; min-height: 8rem; padding: 1rem .85rem; border: 1px solid rgba(255,255,255,.18); border-radius: 1rem; background: rgba(255,255,255,.07); }
+.price-options small { color: var(--aqua-light); font-size: .52rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.price-options strong { margin-top: .7rem; color: var(--yellow); font-family: var(--display); font-size: clamp(1.75rem, 3vw, 2.8rem); letter-spacing: -.08em; line-height: .8; }
+.price-options span { margin-top: auto; color: rgba(255,255,255,.76); font-size: .62rem; line-height: 1.3; }
+.price-note { grid-column: 1 / -1; margin: -.5rem 0 0; color: rgba(255,255,255,.56); font-size: .65rem; }
+@media (max-width: 820px) { .price-card { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .price-options { gap: .45rem; } .price-options > div { min-height: 7.5rem; padding: .8rem .65rem; } .price-options strong { font-size: 1.65rem; } .price-options span { font-size: .56rem; } }

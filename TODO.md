@@ -17,6 +17,8 @@
 - [x] Exibir o título “NOSSO ENCONTRO SERÁ CHEIO DE DIVERSÃO!”.
 - [x] Exibir claramente “31 de outubro de 2026, sábado”, “Das 10h às 17h” e “Termas da Mata, Cotia, SP”.
 - [x] Exibir o endereço oficial “Estrada Morro Grande, 3000, Jardim Ísis, Cotia – SP, CEP 06719-500”, com acesso pelo km 36 da Rodovia Raposo Tavares, e oferecer botão para abrir a rota exata no Google Maps.
+- [x] Informar o pacote em grupo de R$ 65 por adulto e R$ 50 por criança; crianças a partir de 3 anos pagam e menores de 3 anos não pagam.
+- [x] Informar os opcionais: estacionamento no local por R$ 60, armário por R$ 35 e boia para comprar por R$ 7; avisar que é permitido levar boia de braço.
 
 ## 4. Confirmação via WhatsApp
 - [x] Exibir o título “VOCÊ VEM COMEMORAR COMIGO?” e o texto “Ajude minha família a organizar tudo confirmando sua presença pelo WhatsApp.”.

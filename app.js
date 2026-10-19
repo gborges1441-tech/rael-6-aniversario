@@ -66,6 +66,9 @@ if (birthdaySong && musicToggle) {
     else birthdaySong.pause();
   });
   window.addEventListener("pointerdown", () => { if (birthdaySong.paused) playBirthdaySong(); }, { once: true, passive: true });
+  window.addEventListener("keydown", () => { if (birthdaySong.paused) playBirthdaySong(); }, { once: true, passive: true });
+  window.addEventListener("pageshow", () => { if (birthdaySong.paused) playBirthdaySong(); }, { once: true });
+  playBirthdaySong();
   updateMusicUi();
 }
 
