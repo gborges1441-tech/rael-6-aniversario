@@ -68,6 +68,9 @@ if (birthdaySong && musicToggle) {
   window.addEventListener("pointerdown", () => { if (birthdaySong.paused) playBirthdaySong(); }, { once: true, passive: true });
   window.addEventListener("keydown", () => { if (birthdaySong.paused) playBirthdaySong(); }, { once: true, passive: true });
   window.addEventListener("pageshow", () => { if (birthdaySong.paused) playBirthdaySong(); }, { once: true });
+  window.addEventListener("focus", () => { if (birthdaySong.paused) playBirthdaySong(); }, { passive: true });
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && birthdaySong.paused) playBirthdaySong(); }, { passive: true });
+  birthdaySong.autoplay = true;
   playBirthdaySong();
   updateMusicUi();
 }

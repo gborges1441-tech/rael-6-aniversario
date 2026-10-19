@@ -268,3 +268,8 @@ html.js .reveal.is-visible { opacity: 1; transform: translateY(0); }
 .price-note { grid-column: 1 / -1; margin: -.5rem 0 0; color: rgba(255,255,255,.56); font-size: .65rem; }
 @media (max-width: 820px) { .price-card { grid-template-columns: 1fr; } }
 @media (max-width: 520px) { .price-options { gap: .45rem; } .price-options > div { min-height: 7.5rem; padding: .8rem .65rem; } .price-options strong { font-size: 1.65rem; } .price-options span { font-size: .56rem; } }
+
+/* Prazo e compra avulsa */
+.deadline-badge { display: inline-flex; align-items: center; gap: .45rem; margin-top: 1rem; padding: .55rem .7rem; border: 1px solid rgba(255,212,77,.55); border-radius: 999px; color: var(--navy); background: var(--yellow); font-size: .56rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.deadline-badge strong { font-size: .68rem; }
+.price-note strong { color: var(--yellow); }

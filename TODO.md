@@ -19,6 +19,7 @@
 - [x] Exibir o endereço oficial “Estrada Morro Grande, 3000, Jardim Ísis, Cotia – SP, CEP 06719-500”, com acesso pelo km 36 da Rodovia Raposo Tavares, e oferecer botão para abrir a rota exata no Google Maps.
 - [x] Informar o pacote em grupo de R$ 65 por adulto e R$ 50 por criança; crianças a partir de 3 anos pagam e menores de 3 anos não pagam.
 - [x] Informar os opcionais: estacionamento no local por R$ 60, armário por R$ 35 e boia para comprar por R$ 7; avisar que é permitido levar boia de braço.
+- [x] Destacar que o pagamento do pacote promocional em grupo deve ser feito até 22/10/2026; após o prazo, informar R$ 89,90 pelo aplicativo, com possibilidade de aumento até R$ 199 na porta no dia.
 
 ## 4. Confirmação via WhatsApp
 - [x] Exibir o título “VOCÊ VEM COMEMORAR COMIGO?” e o texto “Ajude minha família a organizar tudo confirmando sua presença pelo WhatsApp.”.
