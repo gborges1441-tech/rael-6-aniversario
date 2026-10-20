@@ -11,6 +11,7 @@
 - [x] Utilizar a fotografia real enviada do Rael sem substituir seu rosto, gerar outra criança ou aplicar filtros que alterem sua aparência.
 - [x] Apresentar a foto real em composição visual premium e manter espaços reservados elegantes para novas fotos, sem apresentá-los como imagens reais.
 - [x] Inserir o primeiro vídeo enviado pela família em um bloco próprio, com controles nativos e reprodução compatível com celular.
+- [x] Inserir o segundo vídeo enviado pela família junto ao primeiro, com controles nativos e layout responsivo.
 - [x] Remover o selo “R 6 anos”, a legenda “um sorriso que molha o dia inteiro” e os textos desnecessários sobre a foto ser real.
 - [x] Usar somente informações verificáveis; não inventar atrações, endereço, preços, regras, serviços ou condições de entrada.
 
