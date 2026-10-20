@@ -10,6 +10,8 @@
 - [x] Exibir abertura com imagem impactante de parque aquático, título “RAEL VAI FAZER 6 ANOS!”, texto “Prepare-se para um dia de muita água, alegria e diversão!” e botão “QUERO PARTICIPAR!”.
 - [x] Utilizar a fotografia real enviada do Rael sem substituir seu rosto, gerar outra criança ou aplicar filtros que alterem sua aparência.
 - [x] Apresentar a foto real em composição visual premium e manter espaços reservados elegantes para novas fotos, sem apresentá-los como imagens reais.
+- [x] Inserir o primeiro vídeo enviado pela família em um bloco próprio, com controles nativos e reprodução compatível com celular.
+- [x] Remover o selo “R 6 anos”, a legenda “um sorriso que molha o dia inteiro” e os textos desnecessários sobre a foto ser real.
 - [x] Usar somente informações verificáveis; não inventar atrações, endereço, preços, regras, serviços ou condições de entrada.
 
 ## 3. Experiência e informações do encontro
